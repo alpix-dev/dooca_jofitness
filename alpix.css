@@ -26,7 +26,7 @@ body{opacity:0}
 }
 
 .header-bottom .navigation .navigation-item:last-child > a > span{color:#ec472b}
-.nav-custom + span{display:none!important}
+.header .nav-custom + span{display:none!important}
 
 .smart-input{height:38px;font-weight:300;}
 .smart-input::placeholder{
@@ -42,7 +42,9 @@ body{opacity:0}
 
 .text-top p{font-size:16px;font-weight:500}
 
-.section--banners-carousel{}
+.section--banners-carousel{
+    /* margin: 0 2.3rem; */
+}
 .section--banners-carousel h2.h1{
   font-size:56px;
   font-weight:normal;
@@ -416,7 +418,7 @@ footer{padding:0rem 0;border:0;background:#E8E8E8}
 .collection-sidebar .sidebar-block--grade .sidebar-block__list .sidebar-block__item{min-width:auto;margin:0 1rem 1rem 0;}
 
 .product-card{
-  padding:0 1rem!important;
+  padding: 0 .5rem!important;
   box-shadow:unset!important;
 }
 
@@ -447,15 +449,116 @@ body .product-card .product-card-action button{
   
 }
 
-.logo .logo-link .img-fluid{height: auto;margin: 0;}
+.header-box .logo .logo-link .img-fluid{height: 120px;margin: 0;max-height: unset!important;}
 
+
+.side-menu  .nav-custom + span{text-transform:uppercase;font-size:18px}
+
+.footer-4 .footer-payment .icon span{font-size:26px}
 @media(max-width:990px){
   .header-mobile-1 .nav-custom img, .header-mobile-2 .nav-custom img,
-  .smart-button img{
+  .smart-button img,
+  .nav-icon img{
     height: 20px;
     min-height:unset;
     min-width:unset;
     width: auto;
   }
   .header-mobile .nav-cart>.position-relative>a{min-width:unset;min-height:unset}
+
+  .logo .logo-link .img-fluid{
+    max-height: 36px!important;
+    width: auto;
+    max-width: unset;
+  }
+  #banners-commercial-14028098 .owl-carousel{margin:0;min-height: unset;margin: 0;padding: 0;height: auto;height: fit-content;box-sizing: border-box;/* padding-top: 20px; */}
+  #banners-commercial-14028098 .owl-item .w-100{
+    justify-content:center;
+    flex-direction: column;
+    gap:15px;
+    margin: 25px 0 -10px 0;
+  }
+  #banners-commercial-14028098 img{width:auto!important;display: block;width: 100%;height:30px}
+  #banners-commercial-14028098{padding:0!important;margin: 0;}
+  
+  footer{overflow:hidden}
+
+  
+  .section--banners-carousel h2.h1,
+  .banners-grid .banner-info h3.h3, .section--banners .banner-info h3.h3{font-size:22px;line-height:22px}
+  
+  .footer-top .footer-newsletter h2.h2 b,
+  .bn_sobre .banner-info h3.h3 b,
+  .section--banners-carousel h2.h1 b,
+  .banners-grid .banner-info p, .section--banners .banner-info p, .section--banners-carousel h3.text{font-size:32px;line-height:32px}
+  
+  
+  .section--banners-carousel h3.text{font-size:16px;line-height:16px}
+
+  .section--banners .banner-info > span, .section--banners .banner-info > button, .section--banners .banner-info > a, .section--banners-carousel button, .section--banners-carousel a, .banners-grid .banner-info a, .banners-grid .banner-info button, .banners-grid .banner-info span{
+    font-size:16px;
+    padding-top:3px;
+    padding-bottom:3px
+  }
+  .owl-theme .owl-nav.disabled + .owl-dots{margin-top:0}
+  .owl-theme .owl-dots .owl-dot{
+    min-height: auto;
+    min-width: auto;
+    margin: 0 0.5rem;
+  }
+
+  #filtro-tamanho h3{
+    font-size:22px
+  }
+  #filtro-tamanho a{
+    font-size:22px;
+    min-width:40px;
+    width:auto;
+    padding:0 5px;
+    height:40px;
+    margin:0 .5rem;
+    line-height:36px;    
+  }
+  .section-title h3.h3{font-size:22px;line-height: 22px;margin: 0;}
+  .section-title h2.h1{font-size:33px;line-height: 33px;}
+
+  .product-card .product-card-price{flex-direction: column;}
+  .product-card{padding:0 .5rem!important}
+
+  body .product-card .product-card-action button{
+    opacity:1!important;
+    transform:unset!important;
+    font-size:14px
+  }
+
+  .bn_tarja_grid{margin: 0.5rem 2.3rem;}
+  .bn_tarja_grid .carousel-caption{
+    padding:10px
+  }
+
+  .footer-4 .footer-newsletter > .row{gap:1rem}
+  .footer-4 .footer-newsletter .footer-submit{margin:0;width:100%}
+
+  .footer-jo .menu{
+    display:flex;
+    flex-direction:column;
+    gap:15px
+  }
+  .footer-jo .menu a{margin:0}
+  .footer-jo .menu a + span{display:none}
+
+  .product-title .h1{font-size:32px}
+  .footer-jo .h2{font-size:22px}
+
+  .footer .footer-navigation, .footer .footer-contact, .footer .footer-payment, .footer .footer-security{
+    margin-bottom:1rem
+  }
+  .footer .info div.text{
+    flex-direction: column;
+    gap:5px;
+  }
+  .footer-jo .credits{padding:0}
+
+  .product-shipping,
+  .product-action .product-action-buy{max-width:100%;}
 }

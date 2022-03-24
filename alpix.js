@@ -18,5 +18,17 @@ $('.product-gallery-main img').each(function(){
     $(this).attr('src', url)
 });
 $('.product-color .h4').text('Cor');
-$('.logo-link img').attr('src','https://cdn.jsdelivr.net/gh/alpix-dev/dooca_jofitness/jofitness.svg');
+$('.header-box .logo-link img').attr('src','https://cdn.jsdelivr.net/gh/alpix-dev/dooca_jofitness/jofitness.svg');
+//$('.header-mobile .logo-link img').attr('src','https://cdn.jsdelivr.net/gh/alpix-dev/dooca_jofitness/jofitness_mobile.svg');
+
+if(window.innerWidth < 990){
+    $('#banners-commercial-14028098 > .container > .section-title + .row').addClass('owl-carousel owl-drag');
+    $('#banners-commercial-14028098 > .container > .section-title + .row').owlCarousel({
+        loop:true,
+        items:1,
+        nav:false,
+        autoplay:true,
+        autoplaySpeed: 2000
+    });
+}
 $('body').css('opacity','1')
