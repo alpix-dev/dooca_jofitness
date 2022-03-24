@@ -17,5 +17,6 @@ $('.product-gallery-main img').each(function(){
     let url = $(this).attr('src').split('_')[0] + '.png';
     $(this).attr('src', url)
 });
-$('.product-color .h4').text('Cor')
+$('.product-color .h4').text('Cor');
+$('.logo-link img').attr('src','https://cdn.jsdelivr.net/gh/alpix-dev/dooca_jofitness/jofitness.svg');
 $('body').css('opacity','1')

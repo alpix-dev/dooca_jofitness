@@ -447,6 +447,7 @@ body .product-card .product-card-action button{
   
 }
 
+.logo .logo-link .img-fluid{height: auto;margin: 0;}
 
 @media(max-width:990px){
   .header-mobile-1 .nav-custom img, .header-mobile-2 .nav-custom img,
