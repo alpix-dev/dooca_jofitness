@@ -13,5 +13,9 @@ $('.footer-logo a').appendTo('.footer-jo .credits');
 $('.footer-middle,.footer-logo').remove();
 $('.smart-search').closest('.ml-3').remove();
 
-
+$('.product-gallery-main img').each(function(){
+    let url = $(this).attr('src').split('_')[0] + '.png';
+    $(this).attr('src', url)
+});
+$('.product-color .h4').text('Cor')
 $('body').css('opacity','1')
